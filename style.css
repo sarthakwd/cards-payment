@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.card{
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.card .top-image{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 65%;
+    text-align: center;
+}
+
+
+.select-plan{
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 10%;
+    background-color: #8BC6EC;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-self: center;
+}
+
+#text{
+    padding-right: 90px;
+}
+
+
+.change{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-self: center;
+}
+.change a{
+    color: #080918;
+}
+
+.change a:hover{
+    color: #595dad;
+}
+
+.payment-button{
+    width: 80%;
+    height: 9%;
+    background-color: #595dad;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.payment-button:hover{
+    background-color: #6e6f86;
+    cursor: pointer;
+}
+
+.cancel-order{
+    text-decoration: none;
+    color: rgb(92, 91, 91);
+    font-weight: bold;
+    font-size: large;
+}
+
+@media screen and (max-width: 400px) and (min-height: 876px) {
+
+    
+    
+    .select-plan{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 80%;
+        height: 300px;
+        background-color: #8BC6EC;
+        border-radius: 10px;
+        padding: 10px;
+        gap: 20px;
+    }
+    
+    
+    .icon{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+    }
+    
+    #text{
+        padding-right: 5px;
+        text-align: center;
+    }
+    
+    .payment-button{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 10px;
+        background-color: #595dad;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+
+    .card{
+        width: 400px;
+        height: 650px;
+        background-color: white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+}
+
